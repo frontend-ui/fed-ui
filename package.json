@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/frontend-ui/fed-ui/issues"
   },
-  "homepage": "https://github.com/frontend-ui/fed-ui#readme"
+  "homepage": "https://github.com/frontend-ui/fed-ui#readme",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  }
 }
