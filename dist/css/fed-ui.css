@@ -22,4 +22,14 @@ main {
   display: block;
 }
 
+.fed-btn {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.5;
+  padding: 0.8em 1em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
 /*# sourceMappingURL=fed-ui.css.map */
