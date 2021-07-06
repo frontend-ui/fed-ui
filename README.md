@@ -9,6 +9,14 @@ $ cd fed-ui
 $ npm install
 ```
 
+## NPM (Node Package Manager)
+
+```
+$ npm install @frontend-ui/fed-ui
+```
+
+https://www.npmjs.com/package/@frontend-ui/fed-ui
+
 ## Build
 
 ```
