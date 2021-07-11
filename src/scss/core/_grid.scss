@@ -1,0 +1,18 @@
+.fed-grid {
+	display: grid;
+	grid-gap: 1rem;
+	margin: 0 auto;
+	max-width: 1200px;
+
+	// Grid becomes two columns at the breakpoint
+	@media only screen and (min-width: 600px) {
+		// repeat(NUM_COLUMNS, 1fr)
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	// Grid becomes three columns at the breakpoint
+	@media only screen and (min-width: 900px) {
+		// repeat(NUM_COLUMNS, 1fr)
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
