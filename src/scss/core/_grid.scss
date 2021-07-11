@@ -1,7 +1,7 @@
 .fed-grid {
 	display: grid;
 	grid-gap: 1rem;
-	// margin: 0 auto;
+	margin: 0 auto;
 	max-width: 1200px;
 
 	/*
@@ -21,4 +21,19 @@
 	// Columns automatically break when each is below minmax value
 	// Replaces the use of @media queries
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	// Rows to never be less than 0 in height and automatically increase in height if needed
+	grid-auto-rows: minmax(0, auto);
+}
+
+.col {
+	border: 1px solid red;
+}
+
+.col-num {
+	// Element starts at grid-line 1 and ends at grid-line 4
+	// We can also use grid-column: 1/-1; (This won't break the layout), probably the one to use
+	// 3 columns have 4 grid lines
+	// 4 columns have 5 grid lines
+	// grid-column: 1/1 is invalid as it resets to default
+	grid-column: 1 / -1;
 }

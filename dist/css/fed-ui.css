@@ -25,6 +25,7 @@ main {
 .fed-grid {
   display: grid;
   grid-gap: 1rem;
+  margin: 0 auto;
   max-width: 1200px;
   /*
   // Grid becomes two columns at the breakpoint
@@ -40,6 +41,15 @@ main {
   }
   */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(0, auto);
+}
+
+.col {
+  border: 1px solid red;
+}
+
+.col-num {
+  grid-column: 1/-1;
 }
 
 /*# sourceMappingURL=fed-ui.css.map */
