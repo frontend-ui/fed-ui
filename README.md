@@ -34,6 +34,8 @@ $ npm install @frontend-ui/fed-ui
 ```
 
 ```scss
+// Your main SCSS file
+
 @use 'core/base';
 
 // Button component
