@@ -27,7 +27,11 @@ $ npm run compile
 
 ### Button
 
-To import just the button component into your own SCSS code, use NPM (Node Package Manager) to install the fed-ui package and the @use rule to import the component you need. You will require the 'core/base' SCSS partial.
+To import just the button component into your own SCSS code, use NPM (Node Package Manager) to install the fed-ui package and the @use rule to import the button component into your own SCSS index/main file. You will require the 'core/base' to also be imported into your SCSS code.
+
+```
+$ npm install @frontend-ui/fed-ui
+```
 
 ```scss
 @use 'core/base';
