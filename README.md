@@ -19,6 +19,8 @@ https://www.npmjs.com/package/@frontend-ui/fed-ui
 
 ## Build & Compile the SCSS
 
+The fed-ui front-end framework uses the NPM (Node Package Manager) sass package to compile the SCSS code into CSS. This uses Dart Sass rather than Ruby Sass and so we can use the @use rule to import our SCSS partials.
+
 ```
 $ npm run compile
 ```
