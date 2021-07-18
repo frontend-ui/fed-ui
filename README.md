@@ -82,6 +82,12 @@ The button component has the following modifier classes:
 <!-- Add the JavaScript hook to apply JavaScript code to the button -->
 <button type="button" class="fui-btn js-fui-btn">Button</button>
 
+<!-- Primary button -->
+<button type="button" class="fui-btn fui-btn--primary">Button</button>
+
+<!-- Success button -->
+<button type="button" class="fui-btn fui-btn--success">Button</button>
+
 <!-- Set the button to show as active, you will need JavaScript code here -->
 <button type="button" class="fui-btn js-fui-btn fui-btn--active">Button</button>
 

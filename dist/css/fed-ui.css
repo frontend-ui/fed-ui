@@ -31,6 +31,16 @@ main {
   text-decoration: none;
   vertical-align: middle;
 }
+.fui-btn--primary {
+  color: #fff;
+  background-color: #0d6efd;
+  border: 1px solid #0d6efd;
+}
+.fui-btn--success {
+  color: #fff;
+  background-color: #198754;
+  border: 1px solid #198754;
+}
 .fui-btn--full-width {
   width: 100%;
 }
