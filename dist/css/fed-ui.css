@@ -22,7 +22,7 @@ main {
   display: block;
 }
 
-.fed-btn {
+.fui-btn {
   cursor: pointer;
   display: inline-block;
   line-height: 1.5;
@@ -30,6 +30,9 @@ main {
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
+}
+.fui-btn--full-width {
+  width: 100%;
 }
 
 /*# sourceMappingURL=fed-ui.css.map */

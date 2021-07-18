@@ -8,4 +8,9 @@
 	// Remove text-decoration for when a link is styled as a button
 	text-decoration: none;
 	vertical-align: middle;
+
+	// Set the button to be full-width
+	&--full-width {
+		width: 100%;
+	}
 }
