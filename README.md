@@ -27,6 +27,15 @@ $ npm run compile
 
 ### Button
 
+To import just the button component into your own SCSS code, use NPM (Node Package Manager) to install the fed-ui package and the @use rule to import the component you need. You will require the 'core/base' SCSS partial.
+
+```scss
+@use 'core/base';
+
+// Button component
+@use 'components/button';
+```
+
 Remember to add the type attribute to the button element to prevent the button default being submit and to prevent the button refreshing the page when clicked.
 
 Each button should apply the CSS classes for styling and a js-hook class to apply any JavaScript code to separate styling and functionality.
@@ -60,8 +69,14 @@ btn.forEach(button => {
 The button component has the following modifier classes:
 
 ```html
-<button type="button" class="fui-btn <MODIFIER-CLASSES-HERE>">Button</button>
-```
+<button type="button" class="fui-btn">Button</button>
 
-+ fui-btn--full-width: Set the button to be full-width at 100%.
-+ fui-btn--active: Active state applied when the button is clicked. You will need to use the above JavaScript code to apply this.
+<!-- Add the JavaScript hook to apply JavaScript code to the button -->
+<button type="button" class="fui-btn js-fui-btn">Button</button>
+
+<!-- Set the button to show as active, you will need JavaScript code here -->
+<button type="button" class="fui-btn js-fui-btn fui-btn--active">Button</button>
+
+<!-- Set the button to be 100% full width -->
+<button type="button" class="fui-btn fui-btn--full-width">Button</button>
+```

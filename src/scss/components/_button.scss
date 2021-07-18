@@ -9,6 +9,10 @@
 	text-decoration: none;
 	vertical-align: middle;
 
+	&--active {
+		// Active state styling here
+	}
+
 	// Set the button to be full-width
 	&--full-width {
 		width: 100%;
