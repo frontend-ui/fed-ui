@@ -36,10 +36,18 @@ main {
   background-color: #0d6efd;
   border: 1px solid #0d6efd;
 }
+.fui-btn--primary:hover {
+  background-color: #408cfd;
+  border-color: #408cfd;
+}
 .fui-btn--success {
   color: #fff;
   background-color: #198754;
   border: 1px solid #198754;
+}
+.fui-btn--success:hover {
+  background-color: #21b26f;
+  border-color: #21b26f;
 }
 .fui-btn--full-width {
   width: 100%;
