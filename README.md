@@ -42,14 +42,16 @@ Whenever possible, avoid modifying FED-UI's core files. For SCSS, that means cre
 
 ```
 your-project /
-  scss /
-    custom.scss
-      node_modules /
-        @frontend-ui /
-          fed-ui /
-            src /
-              scss /
-                index.scss
+  src /
+    scss /
+      custom.scss
+  
+  node_modules /
+    @frontend-ui /
+      fed-ui /
+        src /
+          scss /
+            index.scss
 ```
 
 To install the FED-UI framework, open your custom.scss file (this maybe named something like index.scss or main.scss in your own project), then import the framework:
