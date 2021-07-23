@@ -49,6 +49,10 @@ main {
   background-color: #21b26f;
   border-color: #21b26f;
 }
+.fui-btn--active {
+  background-color: #0257d5;
+  border-color: #0257d5;
+}
 .fui-btn--full-width {
   width: 100%;
 }

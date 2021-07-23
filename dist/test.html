@@ -20,5 +20,19 @@
 
 	</main>
 
+<script>
+const btn = document.querySelectorAll('.js-fui-btn');
+
+// Loop through all buttons and toggle the active class on or off
+btn.forEach(button => {
+	button.addEventListener('click', function() {
+		// Remove the active class from all buttons
+		btn.forEach(activeButton => activeButton.classList.remove('fui-btn--active'));
+		// Add the active class to the button being clicked
+		this.classList.add('fui-btn--active');
+	});
+});
+</script>
+
 </body>
 </html>
