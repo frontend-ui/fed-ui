@@ -29,13 +29,11 @@ Install the framework using NPM (Node Package Manager). This needs to be install
 $ npm install @frontend-ui/fed-ui
 ```
 
-This will install the latest version.
+This will install the latest version of the framework.
 
-```
-$ npm install @frontend-ui/fed-ui@
-```
 
 The NPM (Node Package Manager) package can be found here:
+
 https://www.npmjs.com/package/@frontend-ui/fed-ui
 
 The package should now be listed as a dependency in your package.json file.
@@ -44,14 +42,14 @@ Whenever possible, avoid modifying FED-UI's core files. For SCSS, that means cre
 
 ```
 your-project /
-	scss /
-		custom.scss
-	node_modules /
-		@frontend-ui /
-			fed-ui /
-				src /
-					scss /
-						index.scss
+  scss /
+    custom.scss
+      node_modules /
+        @frontend-ui /
+          fed-ui /
+            src /
+              scss /
+                index.scss
 ```
 
 To install the FED-UI framework, open your custom.scss file (this maybe named something like index.scss or main.scss in your own project), then import the framework:
@@ -68,7 +66,7 @@ You may not want to include the full FED-UI framework in your project. For that 
 
 ### Core
 
-The Core contains the initial reset code for your HTML elements, such as setting the font-size and box-sizing. Within your custom SCSS file, import the Core like so:
+The Core contains the initial reset code for your HTML elements, such as setting the font-size and box-sizing. Within your custom SCSS file, import the FED-UI Core like so:
 
 ```scss
 @import 'node_modules/@frontend-ui/fed-ui/src/scss/core/base';
