@@ -1,6 +1,10 @@
 # FED-UI
 
-## Install
+Open-source UI (User Interface) front-end web framework.
+
+## Clone the Repository
+
+Clone the GitHub repository using these instructions:
 
 ```
 $ git clone https://github.com/frontend-ui/fed-ui.git
@@ -9,39 +13,74 @@ $ cd fed-ui
 $ npm install
 ```
 
-## NPM (Node Package Manager)
-
-```
-$ npm install @frontend-ui/fed-ui
-```
-
-https://www.npmjs.com/package/@frontend-ui/fed-ui
-
 ## Build & Compile the SCSS
 
-The fed-ui front-end framework uses the NPM (Node Package Manager) sass package to compile the SCSS code into CSS. This uses Dart Sass rather than Ruby Sass and so we can use the @use rule to import our SCSS partials.
+The FED-UI front-end framework uses the NPM (Node Package Manager) sass package to compile the SCSS code into CSS. This uses Dart Sass rather than Ruby Sass and so we can use the @use rule to import our SCSS partials.
 
 ```
 $ npm run compile
 ```
 
-## Components
+## Install
 
-### Button
-
-To import just the button component into your own SCSS code, use NPM (Node Package Manager) to install the fed-ui package and the @use rule to import the button component into your own SCSS index/main file. You will require the 'core/base' to also be imported into your SCSS code.
+Install the framework using NPM (Node Package Manager). This needs to be installed as a dependency to allow the code to be used in production.
 
 ```
 $ npm install @frontend-ui/fed-ui
 ```
 
+This will install the latest version.
+
+```
+$ npm install @frontend-ui/fed-ui@
+```
+
+The NPM (Node Package Manager) package can be found here:
+https://www.npmjs.com/package/@frontend-ui/fed-ui
+
+The package should now be listed as a dependency in your package.json file.
+
+Whenever possible, avoid modifying FED-UI's core files. For SCSS, that means creating your own stylesheet that imports FED-UI so you can modify and extend it. Assuming you're project has a file structure like this:
+
+```
+your-project /
+	scss /
+		custom.scss
+	node_modules /
+		@frontend-ui /
+			fed-ui /
+				src /
+					scss /
+						index.scss
+```
+
+To install the FED-UI framework, open your custom.scss file (this maybe named something like index.scss or main.scss in your own project), then import the framework:
+
 ```scss
-// Your main SCSS file
+@import 'node_modules/@frontend-ui/fed-ui/src/scss/index';
+```
 
-@use 'core/base';
+Save the file and compile your SCSS code to include the FED-UI framework code in your project CSS stylesheet.
 
-// Button component
-@use 'components/button';
+## Components
+
+You may not want to include the full FED-UI framework in your project. For that reason, you can choose to install only the components you want.
+
+### Core
+
+The Core contains the initial reset code for your HTML elements, such as setting the font-size and box-sizing. Within your custom SCSS file, import the Core like so:
+
+```scss
+@import 'node_modules/@frontend-ui/fed-ui/src/scss/core/base';
+
+```
+
+### Button
+
+To import a Button component:
+
+```scss
+@import 'node_modules/@frontend-ui/fed-ui/src/scss/components/button';
 ```
 
 Remember to add the type attribute to the button element to prevent the button default being submit and to prevent the button refreshing the page when clicked.
@@ -88,7 +127,7 @@ The button component has the following modifier classes:
 <!-- Success button -->
 <button type="button" class="fui-btn fui-btn--success">Button</button>
 
-<!-- Set the button to show as active, you will need JavaScript code here -->
+<!-- Set the button to show as active, you will need JavaScript to be used -->
 <button type="button" class="fui-btn js-fui-btn fui-btn--active">Button</button>
 
 <!-- Set the button to be 100% full width -->
