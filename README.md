@@ -21,6 +21,56 @@ The FED-UI front-end framework uses the NPM (Node Package Manager) sass package 
 $ npm run compile
 ```
 
+## Setting up your Project
+
+Setting up your own SCSS project is very simple. Begin by creating a new project folder and generating a package.json file.
+
+```
+$ npm init -y
+```
+
+Install the sass NPM (Node Package Manager) package as a devDependency:
+
+```
+$ npm install sass --save-dev
+```
+
+Create a script within your package.json file to run the build and compile your SCSS code into CSS.
+
+```
+"scripts": {
+  "compile": "sass src/scss/custom.scss dist/css/index.css"
+},
+```
+
+Your project directory should look something like this:
+
+```
+your-project /
+  src /
+    scss /
+      custom.scss
+```
+
+Compile your SCSS code by running the NPM script:
+
+```
+$ npm run compile
+```
+
+When you run the build and compile your SCSS code, your file structure will look like this:
+
+```
+your-project /
+  dist /
+    css /
+      index.css
+
+  src /
+    scss /
+      custom.scss
+```
+
 ## Install
 
 Install the framework using NPM (Node Package Manager). This needs to be installed as a dependency to allow the code to be used in production.
@@ -54,10 +104,31 @@ your-project /
             index.scss
 ```
 
+When you compile your code, your file structure may look like this:
+
+```
+your-project /
+  dist /
+    css /
+      index.css
+  src /
+    scss /
+      custom.scss
+  
+  node_modules /
+    @frontend-ui /
+      fed-ui /
+        src /
+          scss /
+            index.scss
+```
+
+If your file structure is as the examples above, your path to the node_modules directory will need to be correct.
+
 To install the FED-UI framework, open your custom.scss file (this maybe named something like index.scss or main.scss in your own project), then import the framework:
 
 ```scss
-@import 'node_modules/@frontend-ui/fed-ui/src/scss/index';
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/index';
 ```
 
 Save the file and compile your SCSS code to include the FED-UI framework code in your project CSS stylesheet.
@@ -71,7 +142,7 @@ You may not want to include the full FED-UI framework in your project. For that 
 The Core contains the initial reset code for your HTML elements, such as setting the font-size and box-sizing. Within your custom SCSS file, import the FED-UI Core like so:
 
 ```scss
-@import 'node_modules/@frontend-ui/fed-ui/src/scss/core/base';
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/base';
 
 ```
 
@@ -80,7 +151,7 @@ The Core contains the initial reset code for your HTML elements, such as setting
 To import a Button component:
 
 ```scss
-@import 'node_modules/@frontend-ui/fed-ui/src/scss/components/button';
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/components/button';
 ```
 
 Remember to add the type attribute to the button element to prevent the button default being submit and to prevent the button refreshing the page when clicked.
