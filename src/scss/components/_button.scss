@@ -1,3 +1,5 @@
+@use './../variables/variables-color' as color;
+
 .fui-btn {
 	cursor: pointer;
 	// Set the button as a block element for when a link is styled as a button
@@ -10,15 +12,15 @@
 	vertical-align: middle;
 
 	&--primary {
-		color: #fff;
-		background-color: #0d6efd;
-		border: 1px solid #0d6efd;
+		color: color.$white;
+		background-color: color.$blue;
+		border: 1px solid color.$blue;
 	}
 
 	&--success {
-		color: #fff;
-		background-color: #198754;
-		border: 1px solid #198754;
+		color: color.$white;
+		background-color: color.$green;
+		border: 1px solid color.$green;
 	}
 
 	&--active {
