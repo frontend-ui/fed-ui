@@ -79,8 +79,11 @@ Install the framework using NPM (Node Package Manager). This needs to be install
 $ npm install @frontend-ui/fed-ui
 ```
 
-This will install the latest version of the framework.
+This will install the latest version of the framework. If you want to install a specific version of the framework set the version using @:
 
+```
+$ npm install @frontend-ui/fed-ui@0.1.0
+```
 
 The NPM (Node Package Manager) package can be found here:
 
@@ -175,12 +178,14 @@ const btn = document.querySelectorAll('.js-fui-btn');
 
 // Loop through all buttons and toggle the active class on or off
 btn.forEach(button => {
-	button.addEventListener('click', function() {
-		// Remove the active class from all buttons
-		btn.forEach(activeButton => activeButton.classList.remove('fui-btn--active'));
-		// Add the active class to the button being clicked
-		this.classList.add('fui-btn--active');
-	});
+    button.addEventListener('click', function() {
+    
+        // Remove the active class from all buttons
+        btn.forEach(activeButton => activeButton.classList.remove('fui-btn--active'));
+    
+        // Add the active class to the button being clicked
+        this.classList.add('fui-btn--active');
+    });
 });
 ```
 
