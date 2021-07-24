@@ -136,6 +136,93 @@ To install the FED-UI framework, open your custom.scss file (this maybe named so
 
 Save the file and compile your SCSS code to include the FED-UI framework code in your project CSS stylesheet.
 
+## Customise
+
+In your `custom.scss`, you'll import the framework's SCSS files. The FED-UI framework has a partial called `_color.scss` containing the colour variables and a `_variables.scss` partial that sets the default styling variables. Every SCSS variable includes the `!default` flag allowing you to override the variables with your own SCSS variable values without modifying the FED-UI source code.
+
+Here's the example of how your `custom.scss` file may look:
+
+```scss
+// Required
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/color';
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables';
+
+// Optional 
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/base';
+
+// Optional components imported
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/components/button';
+// etc.
+```
+
+Overwriting the default SCSS variables:
+
+```scss
+// Required
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/color';
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables';
+
+// Default variable overrides
+$body-bg: #000;
+
+// Optional 
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/base';
+
+// Optional components imported
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/components/button';
+// etc.
+```
+
+You can also import your own SCSS partials:
+
+```scss
+// Required
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/color';
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables';
+
+// Include your own SCSS partials here
+@use 'src/_custom-variables.scss';
+
+// Optional 
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/base';
+
+// Optional components imported
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/components/button';
+// etc.
+```
+
+### Default variables
+
+The default variables located within `variables/_variables.scss` partial that you can override.
+
+```scss
+// Set the default body background color of the page
+$body-bg: $white !default;
+// Set the default body color of the page
+$body-color: $grey-dark !default;
+
+// Primary button
+$btn-primary-bg: $blue !default;
+$btn-primary-color: $white !default;
+$btn-primary-border: 1px solid $blue !default;
+$btn-primary-hover-bg: lighten($blue, 10%) !default;
+$btn-primary-hover-color: $white !default;
+$btn-primary-hover-color-border: lighten($blue, 10%) !default;
+
+// Success button
+$btn-success-bg: $green !default;
+$btn-success-color: $white !default;
+$btn-success-border: 1px solid $green !default;
+$btn-success-hover-bg: lighten($green, 10%) !default;
+$btn-success-hover-color: $white !default;
+$btn-success-hover-color-border: lighten($green, 10%) !default;
+
+// Active button
+$btn-active-bg: darken($blue, 10%) !default;
+$btn-active-color: $white !default;
+$btn-active-color-border: darken($blue, 10%) !default;
+```
+
 ## Components
 
 You may not want to include the full FED-UI framework in your project. For that reason, you can choose to install only the components you want.
