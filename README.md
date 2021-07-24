@@ -232,6 +232,8 @@ You may not want to include the full FED-UI framework in your project. For that 
 The Core contains the initial reset code for your HTML elements, such as setting the font-size and box-sizing. Within your custom SCSS file, import the FED-UI Core like so:
 
 ```scss
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables';
+
 @use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/base';
 
 ```
@@ -241,6 +243,8 @@ The Core contains the initial reset code for your HTML elements, such as setting
 To import a Button component:
 
 ```scss
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables';
+
 @use '../../node_modules/@frontend-ui/fed-ui/src/scss/components/button';
 ```
 
