@@ -1,0 +1,28 @@
+// Import the color variables
+@use 'color' as *;
+
+// Set the default body background color of the page
+$body-bg: $white !default;
+// Set the default body color of the page
+$body-color: $grey-dark !default;
+
+// Primary button
+$btn-primary-bg: $blue !default;
+$btn-primary-color: $white !default;
+$btn-primary-border: 1px solid $blue !default;
+$btn-primary-hover-bg: lighten($blue, 10%) !default;
+$btn-primary-hover-color: $white !default;
+$btn-primary-hover-color-border: lighten($blue, 10%) !default;
+
+// Success button
+$btn-success-bg: $green !default;
+$btn-success-color: $white !default;
+$btn-success-border: 1px solid $green !default;
+$btn-success-hover-bg: lighten($green, 10%) !default;
+$btn-success-hover-color: $white !default;
+$btn-success-hover-color-border: lighten($green, 10%) !default;
+
+// Active button
+$btn-active-bg: darken($blue, 10%) !default;
+$btn-active-color: $white !default;
+$btn-active-color-border: darken($blue, 10%) !default;

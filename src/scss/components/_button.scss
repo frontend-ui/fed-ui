@@ -1,4 +1,4 @@
-@use './../variables/variables-color' as color;
+@use './../variables/variables' as *;
 
 .fui-btn {
 	cursor: pointer;
@@ -13,32 +13,35 @@
 
 	// Primary button
 	&--primary {
-		color: color.$white;
-		background-color: color.$blue;
-		border: 1px solid color.$blue;
+		color: $btn-primary-color;
+		background-color: $btn-primary-bg;
+		border: $btn-primary-border;
 
 		&:hover {
-			background-color: lighten(color.$blue, 10%);
-			border-color: lighten(color.$blue, 10%);
+			color: $btn-primary-hover-color;
+			background-color: $btn-primary-hover-bg;
+			border-color: $btn-primary-hover-color-border;
 		}
 	}
 
 	// Success button
 	&--success {
-		color: color.$white;
-		background-color: color.$green;
-		border: 1px solid color.$green;
+		color: $btn-success-color;
+		background-color: $btn-success-bg;
+		border: $btn-success-border;
 
 		&:hover {
-			background-color: lighten(color.$green, 10%);
-			border-color: lighten(color.$green, 10%);
+			color: $btn-success-hover-color;
+			background-color: $btn-success-hover-bg;
+			border-color: $btn-success-hover-color-border;
 		}
 	}
 
 	// Active state
 	&--active {
-		background-color: darken(color.$blue, 10%);
-		border-color: darken(color.$blue, 10%);
+		color: $btn-active-color;
+		background-color: $btn-active-bg;
+		border-color: $btn-active-color-border;
 	}
 
 	// Set the button to be full-width

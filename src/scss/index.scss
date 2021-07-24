@@ -1,3 +1,9 @@
+// Variables
+@use 'variables/variables' as *;
+
+// Test that we can overright the default variables
+// $body-bg: #efefef;
+
 // Core
 @use 'core/base';
 
