@@ -2,6 +2,8 @@
 
 Open-source UI (User Interface) front-end web framework.
 
+[![npm version](https://badge.fury.io/js/%40frontend-ui%2Ffed-ui.svg)](https://badge.fury.io/js/%40frontend-ui%2Ffed-ui)
+
 ## Clone the Repository
 
 Clone the GitHub repository using these instructions:
