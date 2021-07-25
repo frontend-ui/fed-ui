@@ -15,7 +15,7 @@ $ npm install
 
 ## Build & Compile the SCSS
 
-The FED-UI front-end framework uses the NPM (Node Package Manager) sass package to compile the SCSS code into CSS. This uses Dart Sass rather than Ruby Sass and so we can use the @use rule to import our SCSS partials.
+The FED-UI front-end framework uses the `NPM (Node Package Manager)` `sass` package to compile the SCSS code into CSS. This uses Dart Sass rather than Ruby Sass and so we can use the `@use` rule to import our SCSS partials.
 
 ```
 $ npm run compile
@@ -23,19 +23,19 @@ $ npm run compile
 
 ## Setting up your Project
 
-Setting up your own SCSS project is very simple. Begin by creating a new project folder and generating a package.json file.
+Setting up your own SCSS project is very simple. Begin by creating a new project folder and generating a `package.json` file.
 
 ```
 $ npm init -y
 ```
 
-Install the sass NPM (Node Package Manager) package as a devDependency:
+Install the `sass` `NPM (Node Package Manager)` package as a devDependency:
 
 ```
 $ npm install sass --save-dev
 ```
 
-Create a script within your package.json file to run the build and compile your SCSS code into CSS.
+Create a script within your `package.json` file to run the build and compile your SCSS code into CSS.
 
 ```
 "scripts": {
@@ -73,19 +73,21 @@ your-project /
 
 ## Install
 
-Install the framework using NPM (Node Package Manager). This needs to be installed as a dependency to allow the code to be used in production.
+Install the framework using `NPM (Node Package Manager)`. This needs to be installed as a dependency to allow the code to be used in production.
+
+Before installing the `NPM package`, it's always worthwhile including a `.gitignore` in your project folder to avoid the `node_modules` being committed when using version control.
 
 ```
 $ npm install @frontend-ui/fed-ui
 ```
 
-This will install the latest version of the framework. If you want to install a specific version of the framework set the version using @:
+This will install the latest version of the framework. If you want to install a specific version of the framework set the version using `@`:
 
 ```
 $ npm install @frontend-ui/fed-ui@0.1.0
 ```
 
-The NPM (Node Package Manager) package can be found here:
+The `NPM (Node Package Manager)` package can be found here:
 
 https://www.npmjs.com/package/@frontend-ui/fed-ui
 
@@ -126,9 +128,9 @@ your-project /
             index.scss
 ```
 
-If your file structure is as the examples above, your path to the node_modules directory will need to be correct.
+If your file structure is as the examples above, your path to the `node_modules` directory will need to be correct.
 
-To install the FED-UI framework, open your custom.scss file (this maybe named something like index.scss or main.scss in your own project), then import the framework:
+To install the FED-UI framework, open your custom.scss file (this maybe named something like `index.scss` or `main.scs`s in your own project), then import the framework:
 
 ```scss
 @use '../../node_modules/@frontend-ui/fed-ui/src/scss/index';
@@ -140,12 +142,17 @@ Save the file and compile your SCSS code to include the FED-UI framework code in
 
 In your `custom.scss`, you'll import the framework's SCSS files. The FED-UI framework has a partial called `_color.scss` containing the colour variables and a `_variables.scss` partial that sets the default styling variables. Every SCSS variable includes the `!default` flag allowing you to override the variables with your own SCSS variable values without modifying the FED-UI source code.
 
-Here's the example of how your `custom.scss` file may look:
+Here's the example of how your `custom.scss` file may look where we can override the default variables:
 
 ```scss
 // Required
-@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/color';
-@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables';
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables' with (
+
+    // Default variable overrides
+    &body-bg: #000,
+    $btn-primary-bg: #efefef
+
+);
 
 // Optional 
 @use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/base';
@@ -155,15 +162,25 @@ Here's the example of how your `custom.scss` file may look:
 // etc.
 ```
 
-Overwriting the default SCSS variables:
+Your custom variables can be moved into a separate SCSS partial. In this example, our custom variables are placed into a partial named `_custom-variables.scss` but you can name this whatever you would like.
 
 ```scss
-// Required
-@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/color';
-@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables';
+// src/scss/variables/_custom-variables.scss
 
-// Default variable overrides
-$body-bg: #000;
+// Override default variables of the framework
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables' with (
+    &body-bg: #000,
+    $btn-primary-bg: #efefef
+);
+```
+
+The main SCSS file, named `custom.scss` in our example, will need to be updated to import this partial using the `@use` instruction.
+
+```scss
+// src/scss/custom.scss
+
+// Variables
+@use 'src/scss/variables/custom-variables';
 
 // Optional 
 @use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/base';
@@ -173,22 +190,17 @@ $body-bg: #000;
 // etc.
 ```
 
-You can also import your own SCSS partials:
+The file structure in our example will look like this:
 
-```scss
-// Required
-@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/color';
-@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables';
-
-// Include your own SCSS partials here
-@use 'src/_custom-variables.scss';
-
-// Optional 
-@use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/base';
-
-// Optional components imported
-@use '../../node_modules/@frontend-ui/fed-ui/src/scss/components/button';
-// etc.
+```
+your-project /
+  src /
+    scss /
+      custom.scss
+      variables /
+          _custom-vaiables.scss
+  
+  node_modules /
 ```
 
 ### Default variables
@@ -229,7 +241,7 @@ You may not want to include the full FED-UI framework in your project. For that 
 
 ### Core
 
-The Core contains the initial reset code for your HTML elements, such as setting the font-size and box-sizing. Within your custom SCSS file, import the FED-UI Core like so:
+The Core contains the initial reset code for your HTML elements, such as setting the `font-size` and `box-sizing`. Within your custom SCSS file, import the FED-UI Core like so:
 
 ```scss
 @use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables';
@@ -248,21 +260,21 @@ To import a Button component:
 @use '../../node_modules/@frontend-ui/fed-ui/src/scss/components/button';
 ```
 
-Remember to add the type attribute to the button element to prevent the button default being submit and to prevent the button refreshing the page when clicked.
+Remember to add the `type` attribute to the button element to prevent the button default being submit and to prevent the button refreshing the page when clicked.
 
-Each button should apply the CSS classes for styling and a js-hook class to apply any JavaScript code to separate styling and functionality.
+Each button should apply the CSS classes for styling and a `js-hook` class to apply any JavaScript code to separate styling and functionality.
 
 ```html
 <button type="button" class="fui-btn js-fui-btn">Button</button>
 ```
 
-Classes can be applied to a link to resemble a button element. If a link is used, please remember to include the role attribute.
+Classes can be applied to a link to resemble a button element. If a link is used, please remember to include the `role` attribute.
 
 ```html
-<a href="https://www.example.com" role="button" type="button" class="fui-btn js-fui-btn">Button</a>
+<a href="https://www.example.com" role="button" type="button" class="fui-btn fui-btn--primary">Button</a>
 ```
 
-To select all buttons with the js-hook class applied, use the querySelectorAll() document method. You will need to loop over all the button elements to apply functionality to the button that's clicked. This example below will show how to toggle the active class on/off for each button clicked:
+To select all buttons with the `js-hook` class applied, use the `querySelectorAll()` document method. You will need to loop over all the button elements to apply functionality to the button that's clicked. This example below will show how to toggle the active class on/off for each button clicked:
 
 ```javascript
 const btn = document.querySelectorAll('.js-fui-btn');
