@@ -151,7 +151,7 @@ Here's the example of how your `custom.scss` file may look where we can override
 @use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables' with (
 
     // Default variable overrides
-    &body-bg: #000,
+    $body-bg: #000,
     $btn-primary-bg: #efefef
 
 );
@@ -171,7 +171,7 @@ Your custom variables can be moved into a separate SCSS partial. In this example
 
 // Override default variables of the framework
 @use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables' with (
-    &body-bg: #000,
+    $body-bg: #000,
     $btn-primary-bg: #efefef
 );
 ```
