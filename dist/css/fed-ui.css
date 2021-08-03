@@ -7,10 +7,9 @@ html {
   height: 100%;
 }
 
-* {
-  box-sizing: inherit;
-}
-*::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
