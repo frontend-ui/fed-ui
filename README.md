@@ -257,6 +257,32 @@ The Core contains the initial reset code for your HTML elements, such as setting
 
 ```
 
+### Container
+
+Containers horizontally add padding to your content. Use the `.fui-container` as a wrapper around your content to provide padding to the left and right of your content.
+
+To import the `.fui-container` class selector, import the `_layout.scss` SCSS partial.
+
+```scss
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables';
+
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/layout';
+```
+
+Wrap your content using the container.
+
+```html
+<main role="main">
+
+    <div class="fui-container">
+
+        <!-- Your content here -->
+
+    </div>
+
+</main>
+```
+
 ### Button
 
 To import a Button component:
