@@ -33,6 +33,12 @@ body {
 	padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, 
+p {
+	// Set the default margin to generate consistent spacing/layout
+	margin-top: $spacing;
+}
+
 img {
 	// Override the image width and constrain where necessary
 	max-width: 100%;

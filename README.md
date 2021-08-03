@@ -217,6 +217,9 @@ $body-bg: $white !default;
 // Set the default body color of the page
 $body-color: $grey-dark !default;
 
+// Margin between headings and paragraphs
+$spacing: 1.2rem !default;
+
 // Button padding
 $btn-padding: 0.8rem 1rem !default;
 
