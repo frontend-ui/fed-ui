@@ -299,11 +299,11 @@ Wrap your content using the container.
 </main>
 ```
 
-### Section
+### Section
 
-The HTML5 `&lt;section&gt;` element represents a standalone section of the page. Sections should always have a heading and will be full-width of their parent container.
+The HTML5 `<section>` element represents a standalone section of the page. Sections should always have a heading and will be full-width of their parent container.
 
-Adding the .fui-container as a wrapper around the content of the `&lt;section&gt;` within your page will provide the horizontal padding to the left and right. The `&lt;section&gt;` element will manage the vertical padding by default.
+Adding the .fui-container as a wrapper around the content of the `<section>` within your page will provide the horizontal padding to the left and right. The `<section>` element will manage the vertical padding by default.
 
 This is specified within the `_base.scss` partial so only the `Core` of the framework needs to be imported.
 
