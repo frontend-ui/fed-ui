@@ -132,7 +132,7 @@ your-project /
 
 If your file structure is as the examples above, your path to the `node_modules` directory will need to be correct.
 
-To install the FED-UI framework, open your custom.scss file (this maybe named something like `index.scss` or `main.scs`s in your own project), then import the framework:
+To install the FED-UI framework, open your custom.scss file (this maybe named something like `index.scss` or `main.scss` in your own project), then import the framework:
 
 ```scss
 @use '../../node_modules/@frontend-ui/fed-ui/src/scss/index';
@@ -171,8 +171,10 @@ Your custom variables can be moved into a separate SCSS partial. In this example
 
 // Override default variables of the framework
 @use '../../node_modules/@frontend-ui/fed-ui/src/scss/variables/variables' with (
+    
     $body-bg: #000,
     $btn-primary-bg: #efefef
+
 );
 ```
 
@@ -215,6 +217,7 @@ $body-bg: $white !default;
 // Set the default body color of the page
 $body-color: $grey-dark !default;
 
+// Button padding
 $btn-padding: 0.8rem 1rem !default;
 
 // Primary button
