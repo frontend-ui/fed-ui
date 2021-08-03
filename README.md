@@ -220,6 +220,11 @@ $body-color: $grey-dark !default;
 // Margin between headings and paragraphs
 $spacing: 1.2rem !default;
 
+// Section vertical padding (IE/Edge does not support padding-block so this is a fallback)
+$section-padding: 10rem 0 !default;
+// Section padding setting the min and max values for browsers that provide support
+$section-padding-block: min(20vh, 3rem) !default;
+
 // Button padding
 $btn-padding: 0.8rem 1rem !default;
 
@@ -290,6 +295,32 @@ Wrap your content using the container.
         <!-- Your content here -->
 
     </div>
+
+</main>
+```
+
+### Section
+
+The HTML5 `&lt;section&gt;` element represents a standalone section of the page. Sections should always have a heading and will be full-width of their parent container.
+
+Adding the .fui-container as a wrapper around the content of the `&lt;section&gt;` within your page will provide the horizontal padding to the left and right. The `&lt;section&gt;` element will manage the vertical padding by default.
+
+This is specified within the `_base.scss` partial so only the `Core` of the framework needs to be imported.
+
+```html
+<main role="main">
+
+    <h1>Page Heading</h1>
+
+    <section>
+        <div class="fui-container">
+
+            <h2>Section Heading</h2>
+
+            <!-- Your content here -->
+
+        </div>
+    </section>
 
 </main>
 ```

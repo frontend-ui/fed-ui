@@ -38,6 +38,11 @@ main {
   display: block;
 }
 
+section {
+  padding: 10rem 0;
+  padding-block: min(20vh, 3rem);
+}
+
 .fui-container {
   width: 100%;
   padding: 0 1rem;
