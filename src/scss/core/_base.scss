@@ -17,6 +17,8 @@ html {
 }
 
 body {
+	// Fallback to set font-size for legacy browsers that do not use rem, may remove in a future release
+	font-size: 16px;
 	// Set default font-size to equal 16px (1.6 * 10px = 16px)
 	font-size: 1.6rem;
 	// Set the background color of the page
