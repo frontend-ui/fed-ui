@@ -6,6 +6,7 @@ $body-bg: $white !default;
 // Set the default body color of the page
 $body-color: $grey-dark !default;
 
+// Button padding
 $btn-padding: 0.8rem 1rem !default;
 
 // Primary button
@@ -15,6 +16,14 @@ $btn-primary-border: 1px solid $blue !default;
 $btn-primary-hover-bg: lighten($blue, 10%) !default;
 $btn-primary-hover-color: $white !default;
 $btn-primary-hover-color-border: lighten($blue, 10%) !default;
+
+// Secondary button
+$btn-secondary-bg: $grey-dark !default;
+$btn-secondary-color: $white !default;
+$btn-secondary-border: 1px solid $grey-dark !default;
+$btn-secondary-hover-bg: lighten($grey-dark, 10%) !default;
+$btn-secondary-hover-color: $white !default;
+$btn-secondary-hover-color-border: lighten($grey-dark, 10%) !default;
 
 // Success button
 $btn-success-bg: $green !default;

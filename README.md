@@ -228,6 +228,14 @@ $btn-primary-hover-bg: lighten($blue, 10%) !default;
 $btn-primary-hover-color: $white !default;
 $btn-primary-hover-color-border: lighten($blue, 10%) !default;
 
+// Secondary button
+$btn-secondary-bg: $grey-dark !default;
+$btn-secondary-color: $white !default;
+$btn-secondary-border: 1px solid $grey-dark !default;
+$btn-secondary-hover-bg: lighten($grey-dark, 10%) !default;
+$btn-secondary-hover-color: $white !default;
+$btn-secondary-hover-color-border: lighten($grey-dark, 10%) !default;
+
 // Success button
 $btn-success-bg: $green !default;
 $btn-success-color: $white !default;
@@ -335,6 +343,9 @@ The button component has the following modifier classes:
 
 <!-- Primary button -->
 <button type="button" class="fui-btn fui-btn--primary">Button</button>
+
+<!-- Secondary button -->
+<button type="button" class="fui-btn fui-btn--secondary">Button</button>
 
 <!-- Success button -->
 <button type="button" class="fui-btn fui-btn--success">Button</button>

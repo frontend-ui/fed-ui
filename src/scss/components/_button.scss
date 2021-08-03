@@ -24,6 +24,19 @@
 		}
 	}
 
+	// Secondary button
+	&--secondary {
+		color: $btn-secondary-color;
+		background-color: $btn-secondary-bg;
+		border: $btn-secondary-border;
+
+		&:hover {
+			color: $btn-secondary-hover-color;
+			background-color: $btn-secondary-hover-bg;
+			border-color: $btn-secondary-hover-color-border;
+		}
+	}	
+
 	// Success button
 	&--success {
 		color: $btn-success-color;

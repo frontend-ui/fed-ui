@@ -52,6 +52,16 @@ main {
   background-color: #408cfd;
   border-color: #408cfd;
 }
+.fui-btn--secondary {
+  color: #fff;
+  background-color: #2b2d2f;
+  border: 1px solid #2b2d2f;
+}
+.fui-btn--secondary:hover {
+  color: #fff;
+  background-color: #43474a;
+  border-color: #43474a;
+}
 .fui-btn--success {
   color: #fff;
   background-color: #198754;
