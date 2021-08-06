@@ -1,5 +1,36 @@
 @use './../variables/variables' as *;
 
-.fui-btn {
+.fui-nav {
+	display: flex;
+	// Provide space between child elements inside of the header navigation
+	justify-content: space-between;
+	// Align items vertical/centered
+	align-items: center;
+	// Padding provides the height of the header
+	padding: 3rem 0;
 
+	&__menu {
+		// Position navigation menu links as a row
+		display: flex;
+		// Remove bullet points from the list
+		list-style-type: none;
+		// Align items vertical/centered
+		align-items: center;
+		// Gap between each navigation list item
+		gap: 4rem;
+
+		&-item {
+			display: inline-flex;
+		}
+
+		// Link styling within the header navigation
+		&-link {
+			text-decoration: none;
+
+			// Hover state of the links
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 }

@@ -47,6 +47,28 @@ section {
   padding: 0 1rem;
 }
 
+.fui-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+.fui-nav__menu {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 4rem;
+}
+.fui-nav__menu-item {
+  display: inline-flex;
+}
+.fui-nav__menu-link {
+  text-decoration: none;
+}
+.fui-nav__menu-link:hover {
+  text-decoration: underline;
+}
+
 .fui-btn {
   cursor: pointer;
   display: inline-block;
