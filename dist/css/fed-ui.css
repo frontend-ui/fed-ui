@@ -69,6 +69,7 @@ section {
   gap: 2rem;
   background-color: red;
   color: white;
+  padding: 4rem 0;
   text-align: center;
   transition: 0.6s;
   height: 100%;
@@ -85,6 +86,7 @@ section {
     gap: 4rem;
     background-color: #fff;
     color: #000;
+    padding: unset;
     position: unset;
     width: unset;
   }

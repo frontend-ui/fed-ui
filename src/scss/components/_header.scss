@@ -33,6 +33,7 @@
 		//////background-color: #fff;
 		background-color: red;
 		color: white;
+		padding: 4rem 0;
 		text-align: center;
 		transition: 0.6s;
 		height: 100%;
@@ -56,6 +57,7 @@
 			background-color: #fff;
 			color: #000;
 			// Remove the CSS properties on desktop (unset)
+			padding: unset;
 			position: unset;
 			width: unset;
 		}
