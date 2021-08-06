@@ -15,8 +15,11 @@
 		<div class="fui-container">
 			<nav class="fui-nav">
 
-				<div>test</div>
+				<a href="/">
+					<img src="/" height="50" width="50" alt="">
+				</a>
 
+				<!-- Navigation -->
 				<ul class="fui-nav__menu">
 					<li class="fui-nav__menu-item">
 						<a href="/" class="fui-nav__menu-link">Link one</a>
@@ -28,6 +31,15 @@
 						<a href="/" class="fui-nav__menu-link">Link three</a>
 					</li>
 				</ul>
+				<!-- / Navigation -->
+
+				<!-- Hamburger menu icon appears on mobile -->
+				<div class="fui-nav__hamburger-icon js-fui-nav__hamburger-icon">
+					<span class="fui-nav__hamburger-icon-bar"></span>
+					<span class="fui-nav__hamburger-icon-bar"></span>
+					<span class="fui-nav__hamburger-icon-bar"></span>
+				</div>
+				<!-- / Hamburger menu icon -->
 			</nav>
 		</div>
 	</header>
@@ -66,6 +78,27 @@
 		</section>
 
 	</main>
+
+<script>
+const hamburger = document.querySelector(".js-fui-nav__hamburger-icon");
+const navMenu = document.querySelector(".fui-nav__menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+</script>
 
 <script>
 const btn = document.querySelectorAll('.js-fui-btn');
