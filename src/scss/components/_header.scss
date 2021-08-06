@@ -9,6 +9,7 @@
 	// Padding provides the height of the header
 	padding: 3rem 0;
 	z-index: 1;
+	background-color: #fff;
 
 	@media only screen and (min-width: 768px) {
 		align-items: center;
@@ -30,7 +31,7 @@
 		// Gap between each navigation list item on mobile
 		gap: 2rem;
 		//////background-color: #fff;
-		background-color: #ccc;
+		background-color: red;
 		color: white;
 		text-align: center;
 		transition: 0.6s;
@@ -52,6 +53,8 @@
 			flex-direction: row;
 			// Gap between each navigation list item on desktop
 			gap: 4rem;
+			background-color: #fff;
+			color: #000;
 			// Remove the CSS properties on desktop (unset)
 			position: unset;
 			width: unset;

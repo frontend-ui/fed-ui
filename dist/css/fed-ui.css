@@ -52,6 +52,7 @@ section {
   justify-content: space-between;
   padding: 3rem 0;
   z-index: 1;
+  background-color: #fff;
 }
 @media only screen and (min-width: 768px) {
   .fui-nav {
@@ -66,7 +67,7 @@ section {
   list-style-type: none;
   align-items: center;
   gap: 2rem;
-  background-color: #ccc;
+  background-color: red;
   color: white;
   text-align: center;
   transition: 0.6s;
@@ -82,6 +83,8 @@ section {
     display: flex;
     flex-direction: row;
     gap: 4rem;
+    background-color: #fff;
+    color: #000;
     position: unset;
     width: unset;
   }
