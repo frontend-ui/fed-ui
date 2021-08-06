@@ -28,10 +28,11 @@
 		align-items: center;
 		// Gap between each navigation list item on mobile
 		gap: 2rem;
-		background-color: red;
-		color: white;
+		background-color: $nav-bg;
+		color: $nav-color;
 		padding: 4rem 0;
 		text-align: center;
+		// Use transition to set how quickly the mobile menu should slide
 		transition: 0.6s;
 		height: 100%;
 		width: 100%;
@@ -51,8 +52,8 @@
 			flex-direction: row;
 			// Gap between each navigation list item on desktop
 			gap: 4rem;
-			background-color: #fff;
-			color: #000;
+			background-color: $nav-bg-desktop;
+			color: $nav-color-desktop;
 			// Remove the CSS properties on desktop (unset)
 			padding: unset;
 			position: unset;
@@ -92,7 +93,7 @@
 			height: 3px;
 			margin: 5px auto;
 			transition: all 0.3s ease-in-out;
-			background-color: #101010;
+			background-color: $nav-hamburger-icon-bg;
 		}
 	}
 

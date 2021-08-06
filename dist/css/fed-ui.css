@@ -66,8 +66,8 @@ section {
   list-style-type: none;
   align-items: center;
   gap: 2rem;
-  background-color: red;
-  color: white;
+  background-color: #2b2d2f;
+  color: #fff;
   padding: 4rem 0;
   text-align: center;
   transition: 0.6s;
@@ -83,8 +83,8 @@ section {
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    background-color: #fff;
-    color: #000;
+    background-color: inherit;
+    color: inherit;
     padding: unset;
     position: unset;
     width: unset;
@@ -115,7 +115,7 @@ section {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: #000;
 }
 .fui-nav__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);

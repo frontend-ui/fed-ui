@@ -9,6 +9,12 @@ $body-color: $grey-dark !default;
 // Margin between headings and paragraphs
 $spacing: 1.2rem !default;
 
+$nav-color: $white !default;
+$nav-bg: $grey-dark !default;
+$nav-color-desktop: inherit !default;
+$nav-bg-desktop: inherit !default;
+$nav-hamburger-icon-bg: $black !default;
+
 // Section padding setting the min and max values for browsers that provide support
 $section-padding-block: min(20vh, 3rem) !default;
 
