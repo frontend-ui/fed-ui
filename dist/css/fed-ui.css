@@ -50,21 +50,26 @@ section {
 .fui-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 3rem 0;
+  z-index: 1;
+}
+@media only screen and (min-width: 768px) {
+  .fui-nav {
+    align-items: center;
+  }
 }
 .fui-nav__menu {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 5rem;
-  margin-top: 2px;
+  top: 0;
   list-style-type: none;
   align-items: center;
-  gap: 4rem;
-  background-color: #fff;
+  gap: 2rem;
+  background-color: #ccc;
+  color: white;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.6s;
   height: 100%;
   width: 100%;
   left: -100%;
@@ -74,7 +79,9 @@ section {
 }
 @media only screen and (min-width: 768px) {
   .fui-nav__menu {
+    display: flex;
     flex-direction: row;
+    gap: 4rem;
     position: unset;
     width: unset;
   }

@@ -5,9 +5,14 @@
 	// Provide space between child elements inside of the header navigation
 	justify-content: space-between;
 	// Align items vertical/centered
-	align-items: center;
+	//align-items: center;
 	// Padding provides the height of the header
 	padding: 3rem 0;
+	z-index: 1;
+
+	@media only screen and (min-width: 768px) {
+		align-items: center;
+	}
 
 	&__menu {
 		// Position navigation menu links as a row
@@ -15,17 +20,20 @@
 		// Set the navigation menu as a column on mobile view
 		flex-direction: column;
 		position: fixed;
-		top: 5rem;
-		margin-top: 2px;
+		/////top: 5rem;
+		top: 0;
+		/////margin-top: 2px;
 		// Remove bullet points from the list
 		list-style-type: none;
 		// Align items vertical/centered
 		align-items: center;
-		// Gap between each navigation list item
-		gap: 4rem;
-		background-color: #fff;
+		// Gap between each navigation list item on mobile
+		gap: 2rem;
+		//////background-color: #fff;
+		background-color: #ccc;
+		color: white;
 		text-align: center;
-		transition: 0.3s;
+		transition: 0.6s;
 		height: 100%;
 		width: 100%;
 		// Position the navigation menu off-screen (left) to be hidden
@@ -39,8 +47,11 @@
 
 		// Desktop
 		@media only screen and (min-width: 768px) {
+			display: flex;
 			// Set the navigation bar to be a row
 			flex-direction: row;
+			// Gap between each navigation list item on desktop
+			gap: 4rem;
 			// Remove the CSS properties on desktop (unset)
 			position: unset;
 			width: unset;
