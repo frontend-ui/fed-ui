@@ -12,12 +12,39 @@
 	&__menu {
 		// Position navigation menu links as a row
 		display: flex;
+		// Set the navigation menu as a column on mobile view
+		flex-direction: column;
+		position: fixed;
+		top: 5rem;
+		margin-top: 2px;
 		// Remove bullet points from the list
 		list-style-type: none;
 		// Align items vertical/centered
 		align-items: center;
 		// Gap between each navigation list item
 		gap: 4rem;
+		background-color: #fff;
+		text-align: center;
+		transition: 0.3s;
+		height: 100%;
+		width: 100%;
+		// Position the navigation menu off-screen (left) to be hidden
+		left: -100%;
+
+		// Apply active class styling using JavaScript
+		&.active {
+			// Position the navigation menu on-screen if active class applied
+			left: 0;
+		}
+
+		// Desktop
+		@media only screen and (min-width: 768px) {
+			// Set the navigation bar to be a row
+			flex-direction: row;
+			// Remove the CSS properties on desktop (unset)
+			position: unset;
+			width: unset;
+		}
 
 		&-item {
 			display: inline-flex;
@@ -26,6 +53,7 @@
 		// Link styling within the header navigation
 		&-link {
 			text-decoration: none;
+			color: inherit;
 
 			// Hover state of the links
 			&:hover {
@@ -33,62 +61,41 @@
 			}
 		}
 	}
+
+	// Hamburger navigation bar icon
+	&__hamburger-icon {
+		display: block;
+		cursor: pointer;
+
+		// Hide on desktop
+		@media only screen and (min-width: 768px) {
+			display: none;
+		}
+
+		// Styling for the bars within the Hamburger navigation bar icon
+		&-bar {
+			display: block;
+			width: 25px;
+			height: 3px;
+			margin: 5px auto;
+			-webkit-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			background-color: #101010;
+		}
+	}
+
+	// Top Hamburger icon bar will rotate when active to form the cross
+	&__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	// Central Hamburger icon bar will fade with opacity to be hidden
+	&__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	// Bottom Hamburger icon bar will rotate when active to form the cross
+	&__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
 }
-
-        .fui-nav__hamburger-icon {
-            display: none;
-        }
-
-        .fui-nav__hamburger-icon-bar {
-            display: block;
-            width: 25px;
-            height: 3px;
-            margin: 5px auto;
-            -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-            background-color: #101010;
-        }
-
-        .fui-nav__menu {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .fui-nav__menu {
-                position: fixed;
-                left: -100%;
-                top: 5rem;
-                flex-direction: column;
-                background-color: #fff;
-                width: 100%;
-                border-radius: 10px;
-                text-align: center;
-                transition: 0.3s;
-                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-                margin-top: 2px;
-                height: 100%;
-            }
-
-            .fui-nav__menu.active {
-                left: 0;
-            }
-
-            .fui-nav__hamburger-icon {
-                display: block;
-                cursor: pointer;
-            }
-
-            .fui-nav__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(2) {
-                opacity: 0;
-            }
-
-            .fui-nav__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(1) {
-                transform: translateY(8px) rotate(45deg);
-            }
-
-            .fui-nav__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(3) {
-                transform: translateY(-8px) rotate(-45deg);
-            }
-        }

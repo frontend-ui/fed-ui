@@ -55,24 +55,49 @@ section {
 }
 .fui-nav__menu {
   display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 5rem;
+  margin-top: 2px;
   list-style-type: none;
   align-items: center;
   gap: 4rem;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+  width: 100%;
+  left: -100%;
+}
+.fui-nav__menu.active {
+  left: 0;
+}
+@media only screen and (min-width: 768px) {
+  .fui-nav__menu {
+    flex-direction: row;
+    position: unset;
+    width: unset;
+  }
 }
 .fui-nav__menu-item {
   display: inline-flex;
 }
 .fui-nav__menu-link {
   text-decoration: none;
+  color: inherit;
 }
 .fui-nav__menu-link:hover {
   text-decoration: underline;
 }
-
 .fui-nav__hamburger-icon {
-  display: none;
+  display: block;
+  cursor: pointer;
 }
-
+@media only screen and (min-width: 768px) {
+  .fui-nav__hamburger-icon {
+    display: none;
+  }
+}
 .fui-nav__hamburger-icon-bar {
   display: block;
   width: 25px;
@@ -82,50 +107,16 @@ section {
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
-
-.fui-nav__menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.fui-nav__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.fui-nav__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(2) {
+  opacity: 0;
+}
+.fui-nav__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
-@media only screen and (max-width: 768px) {
-  .fui-nav__menu {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    margin-top: 2px;
-    height: 100%;
-  }
-
-  .fui-nav__menu.active {
-    left: 0;
-  }
-
-  .fui-nav__hamburger-icon {
-    display: block;
-    cursor: pointer;
-  }
-
-  .fui-nav__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .fui-nav__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .fui-nav__hamburger-icon.active .fui-nav__hamburger-icon-bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-}
 .fui-btn {
   cursor: pointer;
   display: inline-block;
