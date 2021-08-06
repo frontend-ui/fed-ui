@@ -4,33 +4,30 @@
 	display: flex;
 	// Provide space between child elements inside of the header navigation
 	justify-content: space-between;
-	// Align items vertical/centered
-	//align-items: center;
-	// Padding provides the height of the header
+	// Using padding to set the height of the navigation within the header
 	padding: 3rem 0;
+	// Layer the navigation over the page header using z-index
 	z-index: 1;
-	background-color: #fff;
 
 	@media only screen and (min-width: 768px) {
 		align-items: center;
 	}
 
+	// Mobile navigation menu
 	&__menu {
 		// Position navigation menu links as a row
 		display: flex;
 		// Set the navigation menu as a column on mobile view
 		flex-direction: column;
 		position: fixed;
-		/////top: 5rem;
+		// Position the navigation menu at the top of the screen
 		top: 0;
-		/////margin-top: 2px;
 		// Remove bullet points from the list
 		list-style-type: none;
 		// Align items vertical/centered
 		align-items: center;
 		// Gap between each navigation list item on mobile
 		gap: 2rem;
-		//////background-color: #fff;
 		background-color: red;
 		color: white;
 		padding: 4rem 0;
@@ -41,16 +38,16 @@
 		// Position the navigation menu off-screen (left) to be hidden
 		left: -100%;
 
-		// Apply active class styling using JavaScript
+		// Apply active class styling using JavaScript when the hamburger menu is clicked
 		&.active {
-			// Position the navigation menu on-screen if active class applied
+			// Change position to show the mobile navigation menu on-screen
 			left: 0;
 		}
 
-		// Desktop
+		// Desktop navigation menu
 		@media only screen and (min-width: 768px) {
 			display: flex;
-			// Set the navigation bar to be a row
+			// Set the navigation bar to be a row on desktop
 			flex-direction: row;
 			// Gap between each navigation list item on desktop
 			gap: 4rem;
@@ -66,7 +63,7 @@
 			display: inline-flex;
 		}
 
-		// Link styling within the header navigation
+		// Navigation links
 		&-link {
 			text-decoration: none;
 			color: inherit;
@@ -83,7 +80,7 @@
 		display: block;
 		cursor: pointer;
 
-		// Hide on desktop
+		// Hide the hamburger icon on desktop
 		@media only screen and (min-width: 768px) {
 			display: none;
 		}
