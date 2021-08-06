@@ -220,8 +220,6 @@ $body-color: $grey-dark !default;
 // Margin between headings and paragraphs
 $spacing: 1.2rem !default;
 
-// Section vertical padding (IE/Edge does not support padding-block so this is a fallback)
-$section-padding: 10rem 0 !default;
 // Section padding setting the min and max values for browsers that provide support
 $section-padding-block: min(20vh, 3rem) !default;
 

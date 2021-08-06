@@ -52,8 +52,6 @@ main {
 }
 
 section {
-	// Set vertical padding in the HTML5 section element if padding-block not supported in browser
-	padding: $section-padding;
 	// Set vertical padding (min padding/max padding) using padding-block
 	padding-block: $section-padding-block;
 }
