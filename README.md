@@ -27,7 +27,7 @@ Install the framework:
 $ npm install @frontend-ui/fed-ui
 ```
 
-Once installed the framework will be added to the node_modules directory in your project folder and listed as a dependency in the `package.json` file.
+Once installed the framework will be added to the `node_modules` directory in your project folder and listed as a dependency in the `package.json` file.
 
 To install a specific version:
 
