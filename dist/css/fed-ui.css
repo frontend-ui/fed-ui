@@ -47,6 +47,14 @@ section {
   padding: 0 1rem;
 }
 
+.fui-alert {
+  position: relative;
+  padding: 1rem;
+}
+.fui-alert--curved-border {
+  border-radius: 5px;
+}
+
 .fui-btn {
   cursor: pointer;
   display: inline-block;
