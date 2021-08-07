@@ -54,7 +54,10 @@ section {
 .fui-alert-container .fui-alert {
   margin: 1rem 0;
 }
-.fui-alert-container .fui-alert--no-margin-bottom:last-child {
+.fui-alert-container .fui-alert:first-child {
+  margin-top: 0;
+}
+.fui-alert-container .fui-alert:last-child {
   margin-bottom: 0;
 }
 .fui-alert--primary {
