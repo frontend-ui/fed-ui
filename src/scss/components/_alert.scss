@@ -4,10 +4,18 @@
 	position: relative;
 	padding: 1rem;
 
+	// Primary alert
 	&--primary {
 		border: 1px solid #084298;
 		color: #084298;
-		background-color: lighten(#084298, 60%);
+		background-color: lighten(#084298, 62%);
+	}
+
+	// Secondary alert
+	&--secondary {
+		border: 1px solid #0f5132;
+		color: #0f5132;
+		background-color: lighten(#0f5132, 62%);
 	}
 
 	&--curved-border {

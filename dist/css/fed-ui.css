@@ -54,7 +54,12 @@ section {
 .fui-alert--primary {
   border: 1px solid #084298;
   color: #084298;
-  background-color: #d5e5fd;
+  background-color: #dfebfd;
+}
+.fui-alert--secondary {
+  border: 1px solid #0f5132;
+  color: #0f5132;
+  background-color: #acf0d0;
 }
 .fui-alert--curved-border {
   border-radius: 5px;
