@@ -18,6 +18,10 @@
 		background-color: lighten(#0f5132, 62%);
 	}
 
+	&--align-center {
+		text-align: center;
+	}
+
 	&--curved-border {
 		border-radius: 5px;
 	}
