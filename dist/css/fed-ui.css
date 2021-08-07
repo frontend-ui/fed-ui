@@ -51,6 +51,12 @@ section {
   position: relative;
   padding: 1.8rem;
 }
+.fui-alert-container .fui-alert {
+  margin: 1rem 0;
+}
+.fui-alert-container .fui-alert--no-margin-bottom:last-child {
+  margin-bottom: 0;
+}
 .fui-alert--primary {
   border: 1px solid #084298;
   color: #084298;

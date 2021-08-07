@@ -4,6 +4,12 @@
 	position: relative;
 	padding: 1.8rem;
 
+	&-container {
+		.fui-alert {
+			margin: 1rem 0;
+		}
+	}
+
 	// Primary alert
 	&--primary {
 		border: 1px solid #084298;
