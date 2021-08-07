@@ -4,6 +4,12 @@
 	position: relative;
 	padding: 1rem;
 
+	&--primary {
+		border: 1px solid #084298;
+		color: #084298;
+		background-color: lighten(#084298, 60%);
+	}
+
 	&--curved-border {
 		border-radius: 5px;
 	}
