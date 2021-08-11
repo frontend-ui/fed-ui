@@ -2,6 +2,7 @@
 
 html {
 	box-sizing: border-box;
+	position: relative;
 	// Base font-size set to 10px to allow rem to be calculated easily
 	font-size: 62.5%;
 	margin: 0;
@@ -49,6 +50,8 @@ img {
 main {
 	// Set property for IE11 when using HTML5 <main> element
 	display: block;
+	// Push content, such as page footer, to the bottom
+	min-height: 100vh;
 }
 
 section {
