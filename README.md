@@ -9,6 +9,7 @@ Minimum requirements:
 + Node `v14.16.0` or later
 + NPM `v6.14.11` or later
 
+
 ## Install
 
 Install the framework using `NPM (Node Package Manager)`. Before installing, remember to include a `.gitignore` file in the root of your project folder to prevent the `node_modules` directory being added to version control.
@@ -35,17 +36,6 @@ To install a specific version:
 $ npm install @frontend-ui/fed-ui@0.2.12
 ```
 
-## Clone the repository
-
-You may want to clone the repository to contribute towards this open-source project.
-
-```shell
-$ git clone https://github.com/frontend-ui/fed-ui.git
-
-$ cd fed-ui
-$ npm install
-```
-
 ## Adding the framework to your project
 
 Now that the framework has been installed, it can now be imported into your project. Open your SCSS main file and import the framework from the `node_modules` directory using the `@use` rule. The file path will be relative to where the `node_modules` directory is located in relation to your main SCSS file.
@@ -58,13 +48,6 @@ Now that the framework has been installed, it can now be imported into your proj
 
 Save the file and compile your SCSS code to output the CSS with the framework included.
 
-## Compile the framework
-
-The framework is built using `dart sass`. To compile the framework if changes are made to the core code, the `compile` script is executed using NPM (Node Package Manager):
-
-```shell
-$ npm run compile
-```
 
 ## Default Variables
 
@@ -190,6 +173,7 @@ your-project /
 
 You may not want to include the full framework in your project. For that reason, you can choose to install only the components you want.
 
+
 ### Core (Reset)
 
 The Core contains the initial reset code for your HTML elements, such as setting the `font-size` and `box-sizing`. Within your custom SCSS file, import the `Core` component like so:
@@ -312,7 +296,7 @@ The button component has the following modifier classes:
 <button type="button" class="fui-btn fui-btn--full-width">Button</button>
 ```
 
-## Setting up a SCSS project
+## Setting up your SCSS project
 
 Setting up your own SCSS project is very simple. Begin by creating a new project folder and generating a `package.json` file.
 
@@ -364,3 +348,22 @@ your-project /
 
 You can now install the framework using `NPM (Node Package Manager)`.
 
+
+## Clone the repository
+
+You may want to clone the repository to contribute towards this open-source project.
+
+```shell
+$ git clone https://github.com/frontend-ui/fed-ui.git
+
+$ cd fed-ui
+$ npm install
+```
+
+## Compile the framework
+
+The framework is built using `dart sass`. To compile the framework if changes are made to the core code, the `compile` script is executed using NPM (Node Package Manager):
+
+```shell
+$ npm run compile
+```
