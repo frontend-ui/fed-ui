@@ -4,10 +4,10 @@ The small front-end framework for developing responsive web applications.
 
 [![npm version](https://badge.fury.io/js/%40frontend-ui%2Ffed-ui.svg)](https://badge.fury.io/js/%40frontend-ui%2Ffed-ui)
 
-Requirements:
+Minimum requirements:
 
-+ Node v14.16.0 or later
-+ NPM v6.14.11 or later
++ Node `v14.16.0` or later
++ NPM `v6.14.11` or later
 
 ## Install
 
@@ -37,7 +37,7 @@ $ npm install @frontend-ui/fed-ui@0.2.12
 
 ## Clone the repository
 
-You may want to close the repository to contribute towards this open-source project.
+You may want to clone the repository to contribute towards this open-source project.
 
 ```shell
 $ git clone https://github.com/frontend-ui/fed-ui.git
