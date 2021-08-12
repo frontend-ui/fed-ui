@@ -30,6 +30,14 @@ p {
   margin-top: 1.2rem;
 }
 
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;

@@ -40,6 +40,15 @@ p {
 	margin-top: $spacing;
 }
 
+a {
+	color: $link-color;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 img {
 	// Override the image width and constrain where necessary
 	max-width: 100%;
