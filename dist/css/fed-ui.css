@@ -103,6 +103,9 @@ section {
   background-color: #0257d5;
   border-color: #0257d5;
 }
+.fui-btn--rounded {
+  border-radius: 2rem;
+}
 .fui-btn--full-width {
   width: 100%;
 }

@@ -297,6 +297,9 @@ The button component has the following modifier classes:
 
 <!-- Set the button to be 100% full width -->
 <button type="button" class="fui-btn fui-btn--full-width">Button</button>
+
+<!-- Rounded button -->
+<button type="button" class="fui-btn fui-btn--rounded">Button</button>
 ```
 
 ## Setting up your SCSS project

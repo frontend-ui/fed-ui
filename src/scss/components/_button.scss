@@ -58,6 +58,11 @@
 		border-color: $btn-active-color-border;
 	}
 
+	// Set the button to be rounded
+	&--rounded {
+		border-radius: 2rem;
+	}
+
 	// Set the button to be full-width
 	&--full-width {
 		width: 100%;
