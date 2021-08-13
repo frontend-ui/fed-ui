@@ -10,6 +10,7 @@
 	// Remove text-decoration for when a link is styled as a button
 	text-decoration: none;
 	vertical-align: middle;
+	transition: 0.3s;
 
 	// Primary button
 	&--primary {
