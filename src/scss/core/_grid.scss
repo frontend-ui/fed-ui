@@ -1,39 +1,34 @@
-.fed-grid {
-	display: grid;
-	grid-gap: 1rem;
-	margin: 0 auto;
-	max-width: 1200px;
+@use './../variables/variables' as *;
 
-	/*
-	// Grid becomes two columns at the breakpoint
-	@media only screen and (min-width: 600px) {
-		// repeat(NUM_COLUMNS, 1fr)
-		grid-template-columns: repeat(2, 1fr);
+.fui-grid {
+
+	&-container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	
+	&-row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		max-width: 90rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 1rem;
+		gap: 1rem;
 	}
 
-	// Grid becomes three columns at the breakpoint
-	@media only screen and (min-width: 900px) {
-		// repeat(NUM_COLUMNS, 1fr)
-		grid-template-columns: repeat(3, 1fr);
+	&-col {
+		flex-basis: 100%;
+
+		@media screen and (min-width: 800px) {
+			flex: 1;
+		}
 	}
-	*/
-
-	// Columns automatically break when each is below minmax value
-	// Replaces the use of @media queries
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	// Rows to never be less than 0 in height and automatically increase in height if needed
-	grid-auto-rows: minmax(0, auto);
 }
 
-.col {
-	border: 1px solid red;
-}
-
-.col-num {
-	// Element starts at grid-line 1 and ends at grid-line 4
-	// We can also use grid-column: 1/-1; (This won't break the layout), probably the one to use
-	// 3 columns have 4 grid lines
-	// 4 columns have 5 grid lines
-	// grid-column: 1/1 is invalid as it resets to default
-	grid-column: 1 / -1;
+.card {
+	background-color: blue;
+	color: white;
+	padding: 1rem;
 }

@@ -52,6 +52,35 @@ section {
   padding-block: min(20vh, 3rem);
 }
 
+.fui-grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.fui-grid-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+.fui-grid-col {
+  flex-basis: 100%;
+}
+@media screen and (min-width: 800px) {
+  .fui-grid-col {
+    flex: 1;
+  }
+}
+
+.card {
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+}
+
 .fui-container {
   width: 100%;
   max-width: 1200px;
