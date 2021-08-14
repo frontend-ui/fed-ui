@@ -19,6 +19,15 @@
 		margin-right: auto;
 		padding: 1rem;
 		gap: 1rem;
+
+		&--fluid {
+			max-width: unset;
+
+			&-full-width {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
 	}
 
 	&-col {

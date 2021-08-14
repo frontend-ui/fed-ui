@@ -70,6 +70,13 @@ section {
   padding: 1rem;
   gap: 1rem;
 }
+.fui-grid-row--fluid {
+  max-width: unset;
+}
+.fui-grid-row--fluid-full-width {
+  padding-left: 0;
+  padding-right: 0;
+}
 .fui-grid-col {
   flex-basis: 100%;
 }
