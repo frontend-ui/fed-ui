@@ -29,6 +29,8 @@ body {
 	background-color: $body-bg;
 	// Set the font/text color of the page
 	color: $body-color;
+	// Smooth the font on the level of the pixel
+	-webkit-font-smoothing: antialiased;
 	// Remove margin and padding
 	margin: 0;
 	padding: 0;
