@@ -103,6 +103,9 @@ section {
   background-color: #0257d5;
   border-color: #0257d5;
 }
+.fui-btn--curved {
+  border-radius: 4px;
+}
 .fui-btn--rounded {
   border-radius: 2rem;
 }

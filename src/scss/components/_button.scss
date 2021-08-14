@@ -58,6 +58,11 @@
 		border-color: $btn-active-color-border;
 	}
 
+	// Set the button to have a curved border
+	&--curved {
+		border-radius: 4px;
+	}
+
 	// Set the button to be rounded
 	&--rounded {
 		border-radius: 2rem;
