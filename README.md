@@ -209,6 +209,73 @@ Wrap your content using the container.
 </main>
 ```
 
+### Grid (Flexbox)
+
+The responsive, mobile-first grid is built using flexbox using a series of containers, rows, and columns to layout and align content.
+
+Import the `Grid` component into your SCSS file:
+
+```scss
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/grid';
+```
+
+Update the HTML code to apply the grid structure:
+
+```html
+<div class="fui-grid-container">
+    
+    <div class="fui-grid-row">
+        <div class="fui-grid-col">
+
+            <!-- Your content here -->
+
+        </div>
+    </div>
+
+    <div class="fui-grid-row">
+        <div class="fui-grid-col">
+            
+            <!-- Your content here -->
+        
+        </div>
+        <div class="fui-grid-col">
+
+            <!-- Your content here -->
+
+        </div>
+    </div>
+
+    <div class="fui-grid-row">
+        <div class="fui-grid-col">
+
+            <!-- Your content here -->
+
+        </div>
+        <div class="fui-grid-col">
+
+            <!-- Your content here -->
+
+        </div>
+        <div class="fui-grid-col">
+
+            <!-- Your content here -->
+
+        </div>
+    </div>
+```
+
+To increase the size of the rows across the screen, add the `.fui-grid-row--fluid` modifier class to the row:
+
+```html
+<div class="fui-grid-row fui-grid-row--fluid"> ... </div>
+```
+
+To extend this further and remove the horizontal padding on the left and right of the row, apply the `fui-grid-row--fluid-full-width` modifier class also.
+
+```html
+<div class="fui-grid-row fui-grid-row--fluid fui-grid-row--fluid-full-width"> ... </div>
+```
+
 ### Section
 
 The HTML5 `<section>` element represents a standalone section of the page. Sections should always have a heading and will be full-width of their parent container.
