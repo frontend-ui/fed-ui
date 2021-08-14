@@ -3,6 +3,7 @@
 .fui-grid {
 
 	&-container {
+		// Center the grid on the screen
 		margin: 0 auto;
 
 		@media screen and (min-width: 800px) {
@@ -15,15 +16,20 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		max-width: 90rem;
+		// Position the grid rows in the center of the screen by setting the margin to auto
 		margin-left: auto;
 		margin-right: auto;
+		// Vertical and Horizontal padding around each item in the grid
 		padding: 1rem;
+		// Spacing provided around each item in the grid
 		gap: 1rem;
 
 		&--fluid {
+			// Remove the max-width from the row to allow it to span fully across the screen
 			max-width: unset;
 
 			&-full-width {
+				// Removing the padding allows the grid cols to be full-width
 				padding-left: 0;
 				padding-right: 0;
 			}
