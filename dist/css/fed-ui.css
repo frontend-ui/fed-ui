@@ -86,12 +86,6 @@ section {
   }
 }
 
-.card {
-  background-color: blue;
-  color: white;
-  padding: 1rem;
-}
-
 .fui-container {
   width: 100%;
   max-width: 1200px;
