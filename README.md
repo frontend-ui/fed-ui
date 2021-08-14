@@ -56,6 +56,8 @@ The framework has a number of default variables. These can be overwritten if nee
 Every SCSS variable includes the `!default` flag allowing you to override the variables with your own SCSS variable values without modifying the core source code. 
 
 ```scss
+// Set the default font 
+$body-font: "Nunito", Helvetica Neue, Helvetica, Arial, sans-serif;
 // Set the default body background color of the page
 $body-bg: $white !default;
 // Set the default body color of the page
@@ -161,11 +163,17 @@ The file structure in our example will look like this:
 
 ```
 your-project /
+  fonts /
+      font-file.eot
+      font-file.svg
+      font-file.ttf
+      font-file.woff
+      font-file.woff2
   src /
-    scss /
-      custom.scss
-      variables /
-          _custom-vaiables.scss
+      scss /
+        custom.scss
+        variables /
+            _custom-vaiables.scss
   
   node_modules /
   .gitignore
@@ -182,8 +190,11 @@ You may not want to include the full framework in your project. For that reason,
 The Core contains the initial reset code for your HTML elements, such as setting the `font-size` and `box-sizing`. Within your custom SCSS file, import the `Core` component like so:
 
 ```scss
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/font';
 @use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/base';
 ```
+
+You will need to also import the `Font` component currently to use only apply the `Core` component in your project.
 
 ### Container
 

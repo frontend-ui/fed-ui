@@ -1,6 +1,8 @@
 // Import the color variables
 @use 'color' as *;
 
+// Set the default font 
+$body-font: "Nunito", Helvetica Neue, Helvetica, Arial, sans-serif;
 // Set the default body background color of the page
 $body-bg: $white !default;
 // Set the default body color of the page
