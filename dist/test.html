@@ -13,7 +13,36 @@
 
 	<main role="main">
 
-		<h1>Fed-UI Test Page</h1>
+		<div class="fui-container">
+
+			<h1>Fed-UI Test Page</h1>
+		
+			<button type="button" class="fui-btn fui-btn--primary fui-btn--curved js-fui-btn">Primary</button>
+			<button type="button" class="fui-btn fui-btn--secondary js-fui-btn">Secondary</button>
+			<button type="button" class="fui-btn fui-btn--success js-fui-btn">Success</button>
+
+			<h2>Margin Testing</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<section>
+			<div class="fui-container">
+				<h2>Hello World</h2>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</section>
+
+		<section>
+			<div class="fui-container">
+				<h2>Hello World</h2>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</section>
 
 		<div class="fed-grid">
 			<div class="col col-num">TEST</div>
@@ -28,6 +57,24 @@
 
 
 	</main>
+
+	<footer>
+		<p>&copy; 2021. All rights reserved.</p>
+	</footer>
+
+<script>
+const btn = document.querySelectorAll('.js-fui-btn');
+
+// Loop through all buttons and toggle the active class on or off
+btn.forEach(button => {
+	button.addEventListener('click', function() {
+		// Remove the active class from all buttons
+		btn.forEach(activeButton => activeButton.classList.remove('fui-btn--active'));
+		// Add the active class to the button being clicked
+		this.classList.add('fui-btn--active');
+	});
+});
+</script>
 
 </body>
 </html>

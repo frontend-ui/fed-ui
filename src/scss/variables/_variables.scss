@@ -1,0 +1,48 @@
+// Import the color variables
+@use 'color' as *;
+
+// Set the default body background color of the page
+$body-bg: $white !default;
+// Set the default body color of the page
+$body-color: $grey-dark !default;
+
+// Default link colour
+$link-color: inherit !default;
+
+// Margin between headings and paragraphs
+$spacing: 1.2rem !default;
+
+// Section padding setting the min and max values for browsers that provide support
+$section-padding-block: min(20vh, 3rem) !default;
+
+// Button padding
+$btn-padding: 1rem 2rem !default;
+
+// Primary button
+$btn-primary-bg: $blue !default;
+$btn-primary-color: $white !default;
+$btn-primary-border: 1px solid $blue !default;
+$btn-primary-hover-bg: lighten($blue, 10%) !default;
+$btn-primary-hover-color: $white !default;
+$btn-primary-hover-color-border: lighten($blue, 10%) !default;
+
+// Secondary button
+$btn-secondary-bg: $grey-dark !default;
+$btn-secondary-color: $white !default;
+$btn-secondary-border: 1px solid $grey-dark !default;
+$btn-secondary-hover-bg: lighten($grey-dark, 10%) !default;
+$btn-secondary-hover-color: $white !default;
+$btn-secondary-hover-color-border: lighten($grey-dark, 10%) !default;
+
+// Success button
+$btn-success-bg: $green !default;
+$btn-success-color: $white !default;
+$btn-success-border: 1px solid $green !default;
+$btn-success-hover-bg: lighten($green, 10%) !default;
+$btn-success-hover-color: $white !default;
+$btn-success-hover-color-border: lighten($green, 10%) !default;
+
+// Active button
+$btn-active-bg: darken($blue, 10%) !default;
+$btn-active-color: $white !default;
+$btn-active-color-border: darken($blue, 10%) !default;

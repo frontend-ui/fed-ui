@@ -1,2 +1,12 @@
+// Variables
+@use 'variables/variables' as *;
+
+// Test that we can override the default variables
+// $body-bg: #efefef;
+
+// Core
 @use 'core/base';
-@use 'core/grid';
+@use 'core/layout';
+
+// Components
+@use 'components/button';

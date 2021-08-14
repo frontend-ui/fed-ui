@@ -1,5 +1,8 @@
+@use './../variables/variables' as *;
+
 html {
 	box-sizing: border-box;
+	position: relative;
 	// Base font-size set to 10px to allow rem to be calculated easily
 	font-size: 62.5%;
 	margin: 0;
@@ -8,21 +11,59 @@ html {
 	height: 100%;
 }
 
-* {
+*,
+*::before,
+*::after {
 	box-sizing: inherit;
-
-	&::before,
-	&::after {
-		box-sizing: inherit;
-	}
+	// Remove default margin and padding from all elements
+	margin: 0;
+	padding: 0;
 }
 
 body {
+	// Fallback to set font-size for legacy browsers that do not use rem, may remove in a future release
+	font-size: 16px;
 	// Set default font-size to equal 16px (1.6 * 10px = 16px)
 	font-size: 1.6rem;
+	// Set the background color of the page
+	background-color: $body-bg;
+	// Set the font/text color of the page
+	color: $body-color;
+	// Remove margin and padding
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, 
+p {
+	// Set the default margin to generate consistent spacing/layout
+	margin-top: $spacing;
+}
+
+a {
+	color: $link-color;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+img {
+	// Override the image width and constrain where necessary
+	max-width: 100%;
+	// Maintain the aspect ratio of the image to scale correctly
+	height: auto;
 }
 
 main {
 	// Set property for IE11 when using HTML5 <main> element
 	display: block;
+	// Push content, such as page footer, to the bottom
+	min-height: 100vh;
+}
+
+section {
+	// Set vertical padding (min padding/max padding) using padding-block
+	padding-block: $section-padding-block;
 }

@@ -1,0 +1,75 @@
+@use './../variables/variables' as *;
+
+.fui-btn {
+	cursor: pointer;
+	// Set the button as a block element for when a link is styled as a button
+	display: inline-block;
+	line-height: 1.5;
+	padding: $btn-padding;
+	text-align: center;
+	// Remove text-decoration for when a link is styled as a button
+	text-decoration: none;
+	vertical-align: middle;
+	transition: 0.3s;
+
+	// Primary button
+	&--primary {
+		color: $btn-primary-color;
+		background-color: $btn-primary-bg;
+		border: $btn-primary-border;
+
+		&:hover {
+			color: $btn-primary-hover-color;
+			background-color: $btn-primary-hover-bg;
+			border-color: $btn-primary-hover-color-border;
+		}
+	}
+
+	// Secondary button
+	&--secondary {
+		color: $btn-secondary-color;
+		background-color: $btn-secondary-bg;
+		border: $btn-secondary-border;
+
+		&:hover {
+			color: $btn-secondary-hover-color;
+			background-color: $btn-secondary-hover-bg;
+			border-color: $btn-secondary-hover-color-border;
+		}
+	}	
+
+	// Success button
+	&--success {
+		color: $btn-success-color;
+		background-color: $btn-success-bg;
+		border: $btn-success-border;
+
+		&:hover {
+			color: $btn-success-hover-color;
+			background-color: $btn-success-hover-bg;
+			border-color: $btn-success-hover-color-border;
+		}
+	}
+
+	// Active state
+	&--active {
+		color: $btn-active-color;
+		background-color: $btn-active-bg;
+		border-color: $btn-active-color-border;
+	}
+
+	// Set the button to have a curved border
+	&--curved {
+		border-radius: 4px;
+	}
+
+	// Set the button to be rounded
+	&--rounded {
+		border-radius: 2rem;
+	}
+
+	// Set the button to be full-width
+	&--full-width {
+		width: 100%;
+	}
+}
