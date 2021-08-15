@@ -70,7 +70,7 @@ $link-color: inherit !default;
 $spacing: 1.2rem !default;
 
 // Section padding setting the min and max values for browsers that provide support
-$section-padding-block: min(20vh, 3rem) !default;
+$section-padding-block: min(20vh, 2rem) !default;
 
 // Set code snippet colours
 $pre-color: $grey-light !default;

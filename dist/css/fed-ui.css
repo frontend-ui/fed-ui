@@ -59,7 +59,7 @@ main {
 }
 
 section {
-  padding-block: min(20vh, 3rem);
+  padding-block: min(20vh, 2rem);
 }
 
 pre code {
