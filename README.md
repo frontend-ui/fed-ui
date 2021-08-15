@@ -106,6 +106,8 @@ $btn-success-hover-color-border: lighten($green, 10%) !default;
 $btn-active-bg: darken($blue, 10%) !default;
 $btn-active-color: $white !default;
 $btn-active-color-border: darken($blue, 10%) !default;
+
+$footer-padding: 2rem 0;
 ```
 
 ## Customise

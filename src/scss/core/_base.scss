@@ -71,3 +71,7 @@ section {
 	// Set vertical padding (min padding/max padding) using padding-block
 	padding-block: $section-padding-block;
 }
+
+footer {
+	padding: $footer-padding;
+}
