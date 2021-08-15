@@ -62,6 +62,13 @@ section {
   padding-block: min(20vh, 2rem);
 }
 
+.fui-heading--underline::after {
+  display: block;
+  max-width: 40px;
+  border: 1px solid #e37222;
+  content: "";
+}
+
 .fui-grid-container {
   margin: 0 auto;
 }

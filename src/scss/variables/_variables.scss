@@ -11,15 +11,14 @@ $body-color: $grey-dark !default;
 // Default link colour
 $link-color: inherit !default;
 
+// Underline colour under the heading (if applied)
+$heading-underline-color: $orange !default;
+
 // Margin between headings and paragraphs
 $spacing: 1.2rem !default;
 
 // Section padding setting the min and max values for browsers that provide support
 $section-padding-block: min(20vh, 2rem) !default;
-
-// Set code snippet colours
-$pre-color: $grey-light !default;
-$pre-bg: $grey-dark !default;
 
 // Button padding
 $btn-padding: 1rem 2rem !default;

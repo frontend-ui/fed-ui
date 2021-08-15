@@ -66,15 +66,14 @@ $body-color: $grey-dark !default;
 // Default link colour
 $link-color: inherit !default;
 
+// Underline colour under the heading (if applied)
+$heading-underline-color: $orange !default;
+
 // Margin between headings and paragraphs
 $spacing: 1.2rem !default;
 
 // Section padding setting the min and max values for browsers that provide support
 $section-padding-block: min(20vh, 2rem) !default;
-
-// Set code snippet colours
-// $pre-color: $grey-light !default;
-// $pre-bg: $grey-dark !default;
 
 // Button padding
 $btn-padding: 1rem 2rem !default;
@@ -222,6 +221,20 @@ Wrap your content using the container.
     </div>
 
 </main>
+```
+
+### Typography
+
+All typography styling can be found within the `core/_typography.scss` partial. 
+
+```scss
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/core/typography';
+```
+
+To set a small underline under each heading, add the following classes to your heading tags:
+
+```html
+<h1 class="fui-heading fui-heading--underline"> ... </h1>
 ```
 
 ### Grid (Flexbox)
