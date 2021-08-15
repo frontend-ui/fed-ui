@@ -1,6 +1,6 @@
 {
   "name": "@frontend-ui/fed-ui",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "The small front-end framework for developing responsive web applications.",
   "main": "index.js",
   "style": "dist/css/fed-ui.css",
