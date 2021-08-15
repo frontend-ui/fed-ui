@@ -72,6 +72,10 @@ $spacing: 1.2rem !default;
 // Section padding setting the min and max values for browsers that provide support
 $section-padding-block: min(20vh, 3rem) !default;
 
+// Set code snippet colours
+$pre-color: $grey-light !default;
+$pre-bg: $grey-dark !default;
+
 // Button padding
 $btn-padding: 1rem 2rem !default;
 
@@ -311,6 +315,22 @@ This is specified within the `_base.scss` partial so only the `Core` of the fram
     </section>
 
 </main>
+```
+
+### Code snippets
+
+Code snippets are embedded between the `<pre>` and `<code>` HTML tags. The styling is within the `Core` SCSS `_base.scss` partial.
+
+```html
+<pre>
+    <code>
+
+        .foo {
+            color: #000;
+        }
+
+    </code>
+</pre>
 ```
 
 ### Button
