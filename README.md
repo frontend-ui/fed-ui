@@ -107,6 +107,7 @@ $btn-active-bg: darken($blue, 10%) !default;
 $btn-active-color: $white !default;
 $btn-active-color-border: darken($blue, 10%) !default;
 
+// Footer
 $footer-padding: 2rem 0;
 ```
 
