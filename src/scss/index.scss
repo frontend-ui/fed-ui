@@ -9,8 +9,7 @@
 @use 'core/base';
 @use 'core/grid';
 @use 'core/layout';
-// The shame partial will be removed in future releases
-@use 'core/shame';
 
 // Components
 @use 'components/button';
+@use 'components/terminal';

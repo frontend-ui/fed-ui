@@ -333,6 +333,36 @@ Code snippets are embedded between the `<pre>` and `<code>` HTML tags. The styli
 </pre>
 ```
 
+### Terminal
+
+As with the code snippets, you may want to display a terminal component on the page showing instructions within the command-line. 
+
+Import the `Terminal` component and add to your page.
+
+```scss
+@use '../../node_modules/@frontend-ui/fed-ui/src/scss/components/terminal';
+```
+
+Your HTML code:
+
+```html
+<div class="terminal terminal--shadow">
+    <div class="terminal__top">
+        <div class="terminal__buttons">
+            <span class="terminal__circle terminal__circle--close"></span>
+            <span class="terminal__circle terminal__circle--minimise"></span>
+            <span class="terminal__circle terminal__circle--expand"></span>
+        </div>
+        <div class="terminal__title">bash -- 85x24</div>
+    </div>
+    <pre class="terminal__body">
+              
+        $ node server.js
+    
+    </pre>
+</div>
+```
+
 ### Button
 
 To import a `Button` component:
