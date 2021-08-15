@@ -346,16 +346,16 @@ Import the `Terminal` component and add to your page.
 Your HTML code:
 
 ```html
-<div class="terminal terminal--shadow">
-    <div class="terminal__top">
-        <div class="terminal__buttons">
-            <span class="terminal__circle terminal__circle--close"></span>
-            <span class="terminal__circle terminal__circle--minimise"></span>
-            <span class="terminal__circle terminal__circle--expand"></span>
+<div class="fui-terminal fui-terminal--shadow">
+    <div class="fui-terminal__top">
+        <div class="fui-terminal__buttons">
+            <span class="fui-terminal__circle fui-terminal__circle--close"></span>
+            <span class="fui-terminal__circle fui-terminal__circle--minimise"></span>
+            <span class="fui-terminal__circle fui-terminal__circle--expand"></span>
         </div>
-        <div class="terminal__title">bash -- 85x24</div>
+        <div class="fui-terminal__title">bash -- 85x24</div>
     </div>
-    <pre class="terminal__body">
+    <pre class="fui-terminal__body">
               
         $ node server.js
     
