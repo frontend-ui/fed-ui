@@ -73,8 +73,8 @@ $spacing: 1.2rem !default;
 $section-padding-block: min(20vh, 2rem) !default;
 
 // Set code snippet colours
-$pre-color: $grey-light !default;
-$pre-bg: $grey-dark !default;
+// $pre-color: $grey-light !default;
+// $pre-bg: $grey-dark !default;
 
 // Button padding
 $btn-padding: 1rem 2rem !default;
@@ -315,52 +315,6 @@ This is specified within the `_base.scss` partial so only the `Core` of the fram
     </section>
 
 </main>
-```
-
-### Code snippets
-
-Code snippets are embedded between the `<pre>` and `<code>` HTML tags. The styling is within the `Core` SCSS `_base.scss` partial.
-
-```html
-<pre>
-    <code>
-
-        .foo {
-            color: #000;
-        }
-
-    </code>
-</pre>
-```
-
-### Terminal
-
-As with the code snippets, you may want to display a terminal component on the page showing instructions within the command-line. 
-
-Import the `Terminal` component and add to your page.
-
-```scss
-@use '../../node_modules/@frontend-ui/fed-ui/src/scss/components/terminal';
-```
-
-Your HTML code:
-
-```html
-<div class="fui-terminal fui-terminal--shadow">
-    <div class="fui-terminal__top">
-        <div class="fui-terminal__buttons">
-            <span class="fui-terminal__circle fui-terminal__circle--close"></span>
-            <span class="fui-terminal__circle fui-terminal__circle--minimise"></span>
-            <span class="fui-terminal__circle fui-terminal__circle--expand"></span>
-        </div>
-        <div class="fui-terminal__title">bash -- 85x24</div>
-    </div>
-    <pre class="fui-terminal__body">
-              
-        $ node server.js
-    
-    </pre>
-</div>
 ```
 
 ### Button
