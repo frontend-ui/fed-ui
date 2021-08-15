@@ -62,22 +62,6 @@ section {
   padding-block: min(20vh, 2rem);
 }
 
-/*
-pre code {
-	display: block;
-	color: $pre-color;
-	background-color: $pre-bg;
-	border-radius: 4px;
-	white-space: pre;
-	overflow: auto;
-	max-width: 100%;
-	tab-size: 0;
-	font-size: 1.4rem;
-	margin: 2rem 0;
-	padding: 2rem;
-	font-family: monospace;
-}
-*/
 .fui-grid-container {
   margin: 0 auto;
 }
